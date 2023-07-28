@@ -1,0 +1,9 @@
+from rsf.proj import *
+from rsf.recipes.utils import Pull
+
+# fetch files using Pull(targets,path)
+# this recipe need to be installed
+Pull(['aRSFFile'],
+        path=os.environ.get('RSFSRC')+
+        '/user/creGatherStack/experiments/constLayersModels/model3/backup/')
+
